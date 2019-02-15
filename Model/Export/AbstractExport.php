@@ -182,7 +182,7 @@ abstract class AbstractExport extends AbstractImportExport
      */
     protected function _createAndSendFile($fileName, $header, $content)
     {
-        $pathToSaveFiles = BP . DIRECTORY_SEPARATOR . FsDirectoryList::VAR_DIR . DIRECTORY_SEPARATOR . 'logistic' . DIRECTORY_SEPARATOR . $this->code;
+        $pathToSaveFiles = BP . DIRECTORY_SEPARATOR . FsDirectoryList::VAR_DIR . DIRECTORY_SEPARATOR . $this->code;
         if (!is_dir($pathToSaveFiles)) {
             mkdir($pathToSaveFiles, 0777, true);
         }

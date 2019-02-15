@@ -207,7 +207,7 @@ abstract class AbstractImport extends AbstractImportExport
             return;
         }
 
-        $pathToSaveFiles = BP . DIRECTORY_SEPARATOR . FsDirectoryList::VAR_DIR . DIRECTORY_SEPARATOR . 'logistic' . DIRECTORY_SEPARATOR . $this->code;
+        $pathToSaveFiles = BP . DIRECTORY_SEPARATOR . FsDirectoryList::VAR_DIR . DIRECTORY_SEPARATOR . $this->code;
 
         if (!is_dir($pathToSaveFiles)) {
             mkdir($pathToSaveFiles, 0777, true);
